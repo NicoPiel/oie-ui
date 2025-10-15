@@ -8,5 +8,13 @@
     "files.readonlyInclude": {
         "**/routeTree.gen.ts": true
     },
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit",
+        "source.addMissingImports.ts": "explicit",
+        "source.organizeImports": "explicit"
+    },
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false
 }
