@@ -12,7 +12,7 @@ export default defineConfig([
     {
         files: ['**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
         plugins: { js, 'unused-imports': unusedImports },
-        extends: ['js/recommended'],
+        extends: ['js/recommended', 'plugin:react/jsx-runtime'],
         languageOptions: { globals: { ...globals.browser, ...globals.node } },
         rules: {
             '@typescript-eslint/no-unused-vars': 'off',
