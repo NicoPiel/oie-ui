@@ -8,10 +8,10 @@ import {
     CardHeader,
     CardTitle,
 } from '@/components/ui/card';
+import { Checkbox } from '@/components/ui/checkbox';
 import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
 import { loginWithBasic } from '@/lib/auth';
-import { Checkbox } from '@radix-ui/react-checkbox';
-import { Label } from '@radix-ui/react-select';
 import { createFileRoute, useNavigate } from '@tanstack/react-router';
 import { Eye, EyeOff, Loader2, ShieldCheck } from 'lucide-react';
 import React from 'react';
@@ -63,8 +63,8 @@ export default function LoginPage() {
                         <CardTitle className="text-xl">Sign in</CardTitle>
                     </div>
                     <CardDescription>
-                        Use your Mirth credentials. Your session cookie is set
-                        by the server.
+                        Use your OIE credentials. Your session cookie is set by
+                        the server.
                     </CardDescription>
                 </CardHeader>
 
